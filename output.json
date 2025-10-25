@@ -1,0 +1,89 @@
+{
+  "results": [
+    {
+      "graph_id": 1,
+      "input_stats": {
+        "vertices": 5,
+        "edges": 7
+      },
+      "prim": {
+        "mst_edges": [
+          {"from": "Astana", "to": "Almaty", "weight": 12},
+          {"from": "Astana", "to": "Karaganda", "weight": 22},
+          {"from": "Karaganda", "to": "Aktobe", "weight": 29},
+          {"from": "Aktobe", "to": "Shymkent", "weight": 33}
+        ],
+        "total_cost": 96,
+        "operations_count": 45,
+        "execution_time_ms": 0
+      },
+      "kruskal": {
+        "mst_edges": [
+          {"from": "Astana", "to": "Almaty", "weight": 12},
+          {"from": "Astana", "to": "Karaganda", "weight": 22},
+          {"from": "Karaganda", "to": "Aktobe", "weight": 29},
+          {"from": "Shymkent", "to": "Aktobe", "weight": 33}
+        ],
+        "total_cost": 96,
+        "operations_count": 45,
+        "execution_time_ms": 0
+      }
+    },
+    {
+      "graph_id": 2,
+      "input_stats": {
+        "vertices": 4,
+        "edges": 5
+      },
+      "prim": {
+        "mst_edges": [
+          {"from": "Mangystau", "to": "Atyrau", "weight": 15},
+          {"from": "Atyrau", "to": "WestKazakhstan", "weight": 28},
+          {"from": "WestKazakhstan", "to": "Kyzylorda", "weight": 35}
+        ],
+        "total_cost": 78,
+        "operations_count": 33,
+        "execution_time_ms": 0
+      },
+      "kruskal": {
+        "mst_edges": [
+          {"from": "Mangystau", "to": "Atyrau", "weight": 15},
+          {"from": "Atyrau", "to": "WestKazakhstan", "weight": 28},
+          {"from": "WestKazakhstan", "to": "Kyzylorda", "weight": 35}
+        ],
+        "total_cost": 78,
+        "operations_count": 34,
+        "execution_time_ms": 0
+      }
+    },
+    {
+      "graph_id": 3,
+      "input_stats": {
+        "vertices": 5,
+        "edges": 8
+      },
+      "prim": {
+        "mst_edges": [
+          {"from": "NorthKazakhstan", "to": "Pavlodar", "weight": 18},
+          {"from": "NorthKazakhstan", "to": "Kostanay", "weight": 24},
+          {"from": "Kostanay", "to": "Zhezkazgan", "weight": 27},
+          {"from": "Zhezkazgan", "to": "Turkistan", "weight": 38}
+        ],
+        "total_cost": 107,
+        "operations_count": 51,
+        "execution_time_ms": 0
+      },
+      "kruskal": {
+        "mst_edges": [
+          {"from": "NorthKazakhstan", "to": "Pavlodar", "weight": 18},
+          {"from": "NorthKazakhstan", "to": "Kostanay", "weight": 24},
+          {"from": "Kostanay", "to": "Zhezkazgan", "weight": 27},
+          {"from": "Turkistan", "to": "Zhezkazgan", "weight": 38}
+        ],
+        "total_cost": 107,
+        "operations_count": 52,
+        "execution_time_ms": 0
+      }
+    }
+  ]
+}

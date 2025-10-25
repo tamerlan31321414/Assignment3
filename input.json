@@ -1,0 +1,42 @@
+{
+  "graphs": [
+    {
+      "id": 1,
+      "nodes": ["Astana", "Almaty", "Shymkent", "Karaganda", "Aktobe"],
+      "edges": [
+        {"from": "Astana", "to": "Almaty", "weight": 12},
+        {"from": "Astana", "to": "Karaganda", "weight": 22},
+        {"from": "Almaty", "to": "Shymkent", "weight": 68},
+        {"from": "Almaty", "to": "Karaganda", "weight": 85},
+        {"from": "Shymkent", "to": "Karaganda", "weight": 47},
+        {"from": "Shymkent", "to": "Aktobe", "weight": 33},
+        {"from": "Karaganda", "to": "Aktobe", "weight": 29}
+      ]
+    },
+    {
+      "id": 2,
+      "nodes": ["Mangystau", "Atyrau", "WestKazakhstan", "Kyzylorda"],
+      "edges": [
+        {"from": "Mangystau", "to": "Atyrau", "weight": 15},
+        {"from": "Mangystau", "to": "WestKazakhstan", "weight": 42},
+        {"from": "Atyrau", "to": "WestKazakhstan", "weight": 28},
+        {"from": "WestKazakhstan", "to": "Kyzylorda", "weight": 35},
+        {"from": "Atyrau", "to": "Kyzylorda", "weight": 51}
+      ]
+    },
+    {
+      "id": 3,
+      "nodes": ["NorthKazakhstan", "Pavlodar", "Kostanay", "Turkistan", "Zhezkazgan"],
+      "edges": [
+        {"from": "NorthKazakhstan", "to": "Pavlodar", "weight": 18},
+        {"from": "NorthKazakhstan", "to": "Kostanay", "weight": 24},
+        {"from": "Pavlodar", "to": "Kostanay", "weight": 31},
+        {"from": "Pavlodar", "to": "Turkistan", "weight": 56},
+        {"from": "Kostanay", "to": "Turkistan", "weight": 43},
+        {"from": "Kostanay", "to": "Zhezkazgan", "weight": 27},
+        {"from": "Turkistan", "to": "Zhezkazgan", "weight": 38},
+        {"from": "Pavlodar", "to": "Zhezkazgan", "weight": 49}
+      ]
+    }
+  ]
+}
