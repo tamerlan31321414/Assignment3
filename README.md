@@ -51,7 +51,7 @@ Input Format (JSON)
 
 Example `ass_3_input.json`:
 
-
+```json
 {
   "graphs": [
     {
@@ -120,6 +120,7 @@ bash
 mvn clean package
 2️ Run the program
 bash
+Копировать код
 java -cp target/assignment3-1.0-SNAPSHOT.jar com.assignment3.Main src/main/resources/ass_3_input.json output/ass_3_output.json
 3️Input & Output Paths
 File	Path
@@ -151,4 +152,5 @@ Store benchmark results as CSV for analysis.
 
 Author
 Tamerlan Murat — Astana IT University
+Faculty of Software Engineering
 Assignment 3 — Optimization of a City Transportation Network (MST)
