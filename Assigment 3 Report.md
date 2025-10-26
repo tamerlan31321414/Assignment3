@@ -1,4 +1,5 @@
 Assignment 3 Report: Optimization of City Transportation Network 
+Student: Murat Tamerlan SE-2402
 1. Introduction
 This report presents the implementation and analysis of Prim's and Kruskal's algorithms for finding Minimum Spanning Trees (MST) in graphs representing city transportation networks. The objective was to compare algorithm efficiency and determine optimal use cases for each approach.
 
