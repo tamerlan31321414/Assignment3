@@ -1,10 +1,8 @@
-# 🚦 City Transportation Network Optimization (Minimum Spanning Tree)
+ City Transportation Network Optimization (Minimum Spanning Tree)
 
 This project implements **Prim’s** and **Kruskal’s** algorithms in **Java** to optimize a city’s transportation network by constructing the **Minimum Spanning Tree (MST)** with the lowest possible road construction cost.
 
----
-
-## 📌 Project Overview
+Project Overview
 
 The city is represented as a **weighted undirected graph**, where:
 - **Vertices (nodes)** → City districts  
@@ -24,18 +22,13 @@ Each algorithm reports:
 - Execution time (ms)
 - Graph statistics (vertices & edges)
 
----
 
-## 🧠 Algorithms Implemented
+Algorithms Implemented
 
 | Algorithm | Data Structures Used | Time Complexity | Best For |
 |------------|----------------------|-----------------|-----------|
 | **Prim’s MST** | Priority Queue (Min-Heap) | `O((V + E) log V)` | Dense graphs |
 | **Kruskal’s MST** | Union-Find + Edge Sorting | `O(E log E)` | Sparse graphs |
-
----
-
-## 📂 Project Structure
 
 📦 Assignment3_MST
 ├─ 📂 src
@@ -54,12 +47,7 @@ Each algorithm reports:
 ├─ pom.xml # Maven dependencies (includes Gson)
 └─ README.md
 
-css
-Копировать код
-
----
-
-## 📥 Input Format (JSON)
+Input Format (JSON)
 
 Example `ass_3_input.json`:
 
@@ -81,11 +69,9 @@ Example `ass_3_input.json`:
     }
   ]
 }
-📤 Output Format (JSON)
+ Output Format (JSON)
 Example ass_3_output.json:
 
-json
-Копировать код
 {
   "results": [
     {
@@ -125,24 +111,24 @@ json
     }
   ]
 }
-▶️ How to Run the Project
-1️⃣ Build the project
+ How to Run the Project
+1️ Build the project
 Make sure Maven and JDK 11+ are installed.
 
 bash
 Копировать код
 mvn clean package
-2️⃣ Run the program
+2️ Run the program
 bash
 Копировать код
 java -cp target/assignment3-1.0-SNAPSHOT.jar com.assignment3.Main src/main/resources/ass_3_input.json output/ass_3_output.json
-3️⃣ Input & Output Paths
+3️Input & Output Paths
 File	Path
 Input JSON	src/main/resources/ass_3_input.json
 Output JSON	output/ass_3_output.json
 
-📊 Results & Analysis
-✅ Both algorithms produce identical MST total cost.
+Results & Analysis
+Both algorithms produce identical MST total cost.
 ⏱ Execution time and operation counts vary slightly due to algorithm design.
 
 Graph Size	Algorithm	Total Cost	Time (ms)	Best Use
@@ -150,21 +136,21 @@ Small (5–8 vertices)	Prim	same as Kruskal	very fast	Both
 Medium (8–12 vertices)	Kruskal	same	faster	Sparse graphs
 Large (12+ vertices)	Prim	same	better	Dense graphs
 
-💬 Conclusion
+Conclusion
 Prim’s algorithm is efficient for dense graphs (many connections).
 
 Kruskal’s algorithm performs well for sparse graphs (fewer edges).
 
 Both always yield the same MST total cost but differ in performance and operation count.
 
-🧪 Possible Improvements
+Possible Improvements
 Implement automatic graph generation for testing (small, medium, large).
 
 Add visualization of MST results using JavaFX or GraphStream.
 
 Store benchmark results as CSV for analysis.
 
-✍️ Author
+Author
 Tamerlan Murat — Astana IT University
 Faculty of Software Engineering
 Assignment 3 — Optimization of a City Transportation Network (MST)
